@@ -23,7 +23,8 @@ namespace LAB_08_Calc_Reservation
         private void button1_Click(object sender, EventArgs e)
         {
             DateTime arrivaldate = DateTime.Parse(txtADate.Text);
-
+            DateTime depDate = DateTime.Parse(txtDDate.Text);
+            TimeSpan numOfNights = arrivaldate - depDate;
 
 
 
