@@ -104,6 +104,7 @@
             // 
             // txtNumNights
             // 
+            this.txtNumNights.Enabled = false;
             this.txtNumNights.Location = new System.Drawing.Point(153, 110);
             this.txtNumNights.Name = "txtNumNights";
             this.txtNumNights.Size = new System.Drawing.Size(100, 20);
