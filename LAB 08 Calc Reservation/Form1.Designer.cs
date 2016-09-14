@@ -41,6 +41,7 @@
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.lblDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -94,6 +95,7 @@
             this.txtADate.Name = "txtADate";
             this.txtADate.Size = new System.Drawing.Size(100, 20);
             this.txtADate.TabIndex = 5;
+            this.txtADate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtChangeAmt_KeyDown);
             // 
             // txtDDate
             // 
@@ -101,6 +103,7 @@
             this.txtDDate.Name = "txtDDate";
             this.txtDDate.Size = new System.Drawing.Size(100, 20);
             this.txtDDate.TabIndex = 6;
+            this.txtDDate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtChangeAmt_KeyDown);
             // 
             // txtNumNights
             // 
@@ -145,12 +148,22 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(34, 1);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(0, 13);
+            this.lblDate.TabIndex = 12;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.lblDate);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPrice);
@@ -184,6 +197,7 @@
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblDate;
     }
 }
 
